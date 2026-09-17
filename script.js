@@ -14,20 +14,18 @@ incBtn.addEventListener("click", () => {
   render();
 });
 
+
 decBtn.addEventListener("click", () => {
-  count--;
-  render();
+  if (count > 0) {
+    count--
+    render()
+  }
 });
 
 resetBtn.addEventListener("click", () => {
   count = 0;
   render();
 });
-decBtn.addEventListener("click", () => {
-  if (count > 0) {
-    count--
-    render()
-  }
-})
+
 
 render();
